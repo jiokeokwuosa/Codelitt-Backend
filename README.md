@@ -1,7 +1,6 @@
-# Codelitt-Backend
+# GraphQl && NodeJs
 ## Instructions
-
-The goal of this exercise is to create a backend using Node using a GraphQL arquitecture.
+Backend using Node and GraphQL arquitecture -->Codelitt
 
 ### The Task
 
@@ -20,27 +19,52 @@ In this task, we are building backend of an application that helps us in managin
 2. Make sure to provide a tutorial on how to run your application
 3. Feel free to use any database
 
-## Evaluation
-| Functionality     |                                                                | Possible Points |
-|-------------------|----------------------------------------------------------------|-----------------|
-|                   | Matches the proposed requirements                              |              20 |
-|                   | Implements GraphQL correctly                                   |              15 |
-|                   | Separation of business logic and persistence layers            |              15 |
-|                   | Input validations                                              |               5 |
-|                   | Standard HTTP error codes                                      |               5 |
-| **Code Quality**  |                                                                |                 |
-|                   | Code formatting, readability, maintainability, etc             |               5 |
-|                   | Folders and packages structure                                 |               5 |
-| **DevOps**        |                                                                |                 |
-|                   | Docker image to build/run the project                          |              10 |
-|                   | DB migrations                                                  |               5 |
-| **Documentation** |                                                                |                 |
-|                   | Documentation about the work done, how to run the project, etc |               5 |
-| **Testing**       |                                                                |                 |
-|                   | Has tests                                                      |              10 |
-| **Total**         |                                                                |             100 |
+## Requirements and Installation
+
+To install and run this project you would need to have installed:
+- Node Js
+- Git
+
+To run:
+```
+$ git clone https://github.com/jiokeokwuosa/Codelitt-Backend or use the local copy
+$ cd Codelitt-Backend
+$ npm install
+$ npm run 
+```
+
+## Testing
+```
+mocha and chai
+$ npm test
+```
+
+## Pivotal Tracker stories
+
+None
+
+## Docker
+
+Look for the docker image in the src/ folder
+
+## API
+
+The API is currently in version 1 (v1) and can be accessed locally via [http://localhost:5000/graphql](http://localhost:5000/graphql)
 
 
-### Bonus Points:
-1. If you deploy the application in any server and share the link with us
-2. If provide thoughts on what you could improve on your code given more time and incentives
+## API Documentation Link
+
+None
+
+## Author
+
+Okwuosa Chijioke (Okwuosachijioke@gmail.com)
+
+## License
+
+This is licensed for your use, modification and distribution under the [MIT license.](https://opensource.org/licenses/MIT)
+
+## My Env Variables
+NODE_ENV=development
+PORT=5000
+ATLAS_URL=mongodb+srv://jiokeokwuosa:jiokeokwuosa@chijiokedb-hepo3.mongodb.net/test?retryWrites=true&w=majority
