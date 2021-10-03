@@ -13,6 +13,21 @@ const registerUser ={
     },
     async resolve(parent, args){
         const {fullName, type, duration,role} = args
+        if(!fullName)
+        throw new Error("Please enter fullname", 400)
+
+        if(!type)
+        throw new Error("Please enter membership type", 400)
+
+        if(type != 'employee' && type !='contractor')
+        throw new Error("Accepted value for membership type are employee and contractor", 400)
+ 
+        if(!duration)
+        throw new Error("Please enter duration", 400)
+
+        if(!role)
+        throw new Error("Please enter role", 400)
+
         const user = {
             fullName,
             type,
@@ -37,6 +52,8 @@ const updateUser ={
     },
     async resolve(parent, args){
         const {id,fullName, type, duration,role} = args
+        if(!id)
+        throw new Error("Please enter the id of the user", 400)
         const newData = {
             fullName,
             type,
@@ -56,7 +73,9 @@ const deleteUser = {
         id:{type:GraphQLID}        
     },
     async resolve(parent, args){
-        const {id} = args      
+        const {id} = args    
+        if(!id)
+        throw new Error("Please enter the id of the user", 400)  
         await userModel.findByIdAndDelete(id)        
         return "User deleted successfully"
     },
