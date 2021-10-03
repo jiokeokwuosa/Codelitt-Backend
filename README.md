@@ -5,7 +5,7 @@ The goal of this exercise is to create a backend using Node using a GraphQL arqu
 
 ### The Task
 
-In this task, we are building backend of an application that helps us managing our team using GraphQL.
+In this task, we are building backend of an application that helps us in managing our team using GraphQL.
 
 ### Features and Requirements
 - A member has a name and a type the late one can be an employee or a contractor.
