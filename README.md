@@ -68,3 +68,4 @@ This is licensed for your use, modification and distribution under the [MIT lice
 NODE_ENV=development
 PORT=5000
 ATLAS_URL=mongodb+srv://jiokeokwuosa:jiokeokwuosa@chijiokedb-hepo3.mongodb.net/test?retryWrites=true&w=majority
+
